@@ -1,0 +1,4 @@
+<div class="minesweeper-block" [class]="{'covered': !blockState.isExposed}" (click)="onBlockClick()">
+  <i class="fa fa-bomb" *ngIf="blockState.isBomb"></i>
+  <i class="fa">{{blockState.adjacentBombs}}</i>
+</div>
